@@ -2,7 +2,7 @@ const {test} = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const vm = require('node:vm');
-const html = fs.readFileSync(require('node:path').join(__dirname,'../index.html'),'utf8');
+const html = fs.readFileSync(require('node:path').join(__dirname,'../xo.html'),'utf8');
 const script = html.match(/<script>([\s\S]*?)<\/script>/)[1];
 const lines = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]];
 
